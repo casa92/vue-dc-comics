@@ -3,7 +3,7 @@
         <section class="main-content">
             <div class="container">
                 <div class="main-content-placeholder">
-                    Content goes here
+                    <ProductsList />
                 </div>
             </div>
         </section>
@@ -58,8 +58,13 @@
 </template>
 
 <script>
+import ProductsList from "./ProductsList.vue";
+
 export default {
-    name: "Main"
+    name: "Main",
+    components: {
+        ProductsList
+    }
 }
 </script>
 
